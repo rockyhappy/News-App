@@ -6,4 +6,20 @@
     </style>
 
     <style name="Theme.NewsApp" parent="Base.Theme.NewsApp" />
+    <style name="BottomNavigationText">
+        <item name="android:textSize">12sp</item> <!-- Adjust the font size as needed -->
+        <item name="android:textStyle">bold</item> <!-- Adjust the text style as needed -->
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="colorAccent">@color/primary_color</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Other theme attributes -->
+    </style>
+
 </resources>
