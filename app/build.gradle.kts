@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
-
+    id("kotlin-kapt")
 }
 
 android {
@@ -59,6 +59,7 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:3.4.1")
 
     // Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
@@ -73,14 +74,18 @@ dependencies {
 
     // Room components
     implementation ("androidx.room:room-runtime:2.6.1" )
-    annotationProcessor ("androidx.room:room-compiler:2.6.1")
+    //annotationProcessor ("androidx.room:room-compiler:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+    kapt( "android.arch.persistence.room:compiler:1.1.1")
 
     // Optionally, add the following for Room Kotlin extensions and RxJava support
     implementation ("androidx.room:room-ktx:2.6.1")
     implementation ("androidx.room:room-rxjava2:2.6.1")
 
 
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
+    //for glide
+    implementation ("com.github.bumptech.glide:recyclerview-integration:4.14.2")
 }
