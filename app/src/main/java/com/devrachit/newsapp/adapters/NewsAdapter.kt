@@ -44,7 +44,7 @@ class NewsAdapter( private val itemClickListener: onItemClickListener): Recycler
                 .load(article.urlToImage)
                 .into(ivArticleImage)
             tvSource.text = article.source.name
-            tvTitle.text = article.tittle
+            tvTitle.text = article.title
             tvDescription.text = article.description
             tvPublishedAt.text = article.publishedAt
 

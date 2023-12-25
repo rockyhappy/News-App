@@ -7,6 +7,7 @@ import com.devrachit.newsapp.models.NewsResponse
 import com.devrachit.newsapp.repository.NewsRepository
 import com.devrachit.newsapp.util.Resource
 import kotlinx.coroutines.launch
+import retrofit2.Response
 import java.util.Locale.IsoCountryCode
 
 class NewsViewModel(
@@ -15,8 +16,21 @@ class NewsViewModel(
     val breakingNews :MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     val breakingNewsPage = 1
 
+    init{
+        getBreakingNews("in")
+    }
     fun getBreakingNews(countryCode: String) = viewModelScope.launch{
         breakingNews.postValue(Resource.Loading())
         val response = newsRepository.getBreakingNews(countryCode,breakingNewsPage)
+        breakingNews.postValue(handleBreakingNewsResponse(response))
+
+    }
+    private fun handleBreakingNewsResponse(response : Response<NewsResponse>):Resource<NewsResponse>{
+        if(response.isSuccessful){
+            response.body()?.let{resultResponse->
+                return Resource.Success(resultResponse)
+            }
+        }
+        return Resource.Error(response.message())
     }
 }
