@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("kotlin-kapt")
+    id("androidx.navigation.safeargs")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -74,7 +76,7 @@ dependencies {
 
     // Room components
     implementation ("androidx.room:room-runtime:2.6.1" )
-    //annotationProcessor ("androidx.room:room-compiler:2.6.1")
+    annotationProcessor ("androidx.room:room-compiler:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
     kapt( "android.arch.persistence.room:compiler:1.1.1")
 
@@ -86,6 +88,10 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
 
+
+
     //for glide
     implementation ("com.github.bumptech.glide:recyclerview-integration:4.14.2")
+
+    //implementation ("android.arch.navigation:navigation-fragment-ktx:1.0.0")
 }
