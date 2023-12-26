@@ -81,8 +81,9 @@ class BreakingNewsFragment:Fragment(R.layout.fragment_breaking_news){
             val isNotLoadingAndNotLastPage = !isLoading && !isLastPage
             val isAtLastItem= firstVisibleItemPosition+visibleItemCount >=totalItemCount
             val isNotAtBeginning= firstVisibleItemPosition>=0
-            val isTotalMoreThanVisit =totalItemCount >= QUERY_PAGE_SIZE
-            val shouldPaginate = isNotLoadingAndNotLastPage && isAtLastItem && isNotAtBeginning && isTotalMoreThanVisit && isScrolling
+            val isTotalMoreThanVisible =totalItemCount >= QUERY_PAGE_SIZE
+            val shouldPaginate = isNotLoadingAndNotLastPage && isAtLastItem && isNotAtBeginning &&
+                    isTotalMoreThanVisible && isScrolling
              if(shouldPaginate)
              {
                  viewModel.getBreakingNews("in")
