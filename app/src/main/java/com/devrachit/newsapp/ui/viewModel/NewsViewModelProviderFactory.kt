@@ -1,4 +1,4 @@
-package com.devrachit.newsapp.ui
+package com.devrachit.newsapp.ui.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

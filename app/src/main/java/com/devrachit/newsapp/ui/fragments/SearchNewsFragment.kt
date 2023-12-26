@@ -3,7 +3,6 @@ package com.devrachit.newsapp.ui.fragments
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -12,12 +11,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.devrachit.newsapp.R
 import com.devrachit.newsapp.adapters.NewsAdapter
-import com.devrachit.newsapp.databinding.FragmentBreakingNewsBinding
 import com.devrachit.newsapp.databinding.FragmentSearchNewsBinding
-import com.devrachit.newsapp.models.Article
 import com.devrachit.newsapp.ui.NewsActivity
-import com.devrachit.newsapp.ui.NewsViewModel
-import com.devrachit.newsapp.ui.SharedViewModel
+import com.devrachit.newsapp.ui.viewModel.NewsViewModel
+import com.devrachit.newsapp.ui.viewModel.SharedViewModel
 import com.devrachit.newsapp.util.Constants.Companion.SEARCH_NEWS_TIME_DELAY
 import com.devrachit.newsapp.util.Resource
 import kotlinx.coroutines.Job

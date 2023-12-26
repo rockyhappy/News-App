@@ -3,15 +3,14 @@ package com.devrachit.newsapp.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.devrachit.newsapp.R
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.devrachit.newsapp.databinding.ActivityNewsBinding
 import com.devrachit.newsapp.db.ArticleDatabase
 import com.devrachit.newsapp.repository.NewsRepository
+import com.devrachit.newsapp.ui.viewModel.NewsViewModel
+import com.devrachit.newsapp.ui.viewModel.NewsViewModelProviderFactory
 
 class NewsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewsBinding
@@ -27,7 +26,7 @@ class NewsActivity : AppCompatActivity() {
             bottomNavigationView.setupWithNavController(navController)
         }
         val newsRepository =NewsRepository(ArticleDatabase(this))
-        val viewModelProviderFactory =NewsViewModelProviderFactory(newsRepository)
+        val viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(NewsViewModel::class.java)
 
 

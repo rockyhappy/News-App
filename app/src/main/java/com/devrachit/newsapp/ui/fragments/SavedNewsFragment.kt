@@ -10,15 +10,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.devrachit.newsapp.R
 import com.devrachit.newsapp.adapters.NewsAdapter
-import com.devrachit.newsapp.databinding.FragmentBreakingNewsBinding
 import com.devrachit.newsapp.databinding.FragmentSavedNewsBinding
-import com.devrachit.newsapp.databinding.FragmentSearchNewsBinding
 import com.devrachit.newsapp.ui.NewsActivity
-import com.devrachit.newsapp.ui.NewsViewModel
+import com.devrachit.newsapp.ui.viewModel.NewsViewModel
 import com.google.android.material.snackbar.Snackbar
 
 class SavedNewsFragment:Fragment(R.layout.fragment_saved_news) {
-    lateinit var viewModel:NewsViewModel
+    lateinit var viewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
     private lateinit var binding : FragmentSavedNewsBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

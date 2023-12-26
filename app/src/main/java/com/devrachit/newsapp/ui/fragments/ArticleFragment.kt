@@ -1,20 +1,17 @@
 package com.devrachit.newsapp.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.navArgs
 import com.devrachit.newsapp.R
 import com.devrachit.newsapp.databinding.FragmentArticleBinding
 import com.devrachit.newsapp.models.Article
 import com.devrachit.newsapp.ui.NewsActivity
-import com.devrachit.newsapp.ui.NewsViewModel
-import com.devrachit.newsapp.ui.SharedViewModel
+import com.devrachit.newsapp.ui.viewModel.NewsViewModel
+import com.devrachit.newsapp.ui.viewModel.SharedViewModel
 import com.google.android.material.snackbar.Snackbar
-import java.lang.reflect.InvocationTargetException
 
 
 class ArticleFragment:Fragment(R.layout.fragment_article) {
