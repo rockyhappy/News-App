@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AbsListView
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -75,6 +76,7 @@ class SearchNewsFragment:Fragment(R.layout.fragment_search_news){
                     hideProgressBar()
                     response.message?.let{message ->
                         Log.e(TAG,"An error occured $message")
+                        Toast.makeText(requireContext(),"An Error Occured", Toast.LENGTH_SHORT).show()
                     }
                 }
                 is Resource.Loading-> {
