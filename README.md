@@ -52,6 +52,3 @@ git clone https://github.com/your_username/news_app.git
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Let's make this news app even better together!
 
---- 
-
-In this version of the README, I've added a new feature "View news articles using WebView for a rich browsing experience" to the "Features" section and updated the "Usage" section to mention WebView usage for viewing article details. Additionally, the "Dependencies" section now explicitly mentions WebView as a dependency.
