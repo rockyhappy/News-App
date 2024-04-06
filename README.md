@@ -15,9 +15,12 @@ This application provides users with the latest news articles fetched from a rem
 
 Here are some screenshots showcasing the functionality of the application:
 
-<img src="https://example.com/news_app_screenshot_1.png" alt="News App Screenshot 1" width="250">
-<img src="https://example.com/news_app_screenshot_2.png" alt="News App Screenshot 2" width="250">
-<img src="https://example.com/news_app_screenshot_3.png" alt="News App Screenshot 3" width="250">
+<img src="https://github.com/rockyhappy/News-App/blob/master/example/WhatsApp%20Image%202024-04-07%20at%202.54.17%20AM.jpeg" alt="News App Screenshot 1" width="250">
+<img src="https://github.com/rockyhappy/News-App/blob/master/example/WhatsApp%20Image%202024-04-07%20at%202.54.18%20AM.jpeg" alt="News App Screenshot 2" width="250">
+<img src="https://github.com/rockyhappy/News-App/blob/master/example/WhatsApp%20Image%202024-04-07%20at%202.54.20%20AM.jpeg" alt="News App Screenshot 3" width="250">
+
+https://firebasestorage.googleapis.com/v0/b/twingle-c1acb.appspot.com/o/WhatsApp%20Video%202024-04-07%20at%202.54.20%20AM.mp4?alt=media&token=bd667ef2-2ab3-49c4-bf77-e17ba2b3b5e8
+
 
 ## Installation
 
