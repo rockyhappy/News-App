@@ -1,0 +1,49 @@
+# New App
+
+This application provides users with the latest news articles fetched from a remote server. It's built using Kotlin and XML with the MVVM architecture, incorporating dependency injection using Dagger Hilt and local storage using Room Database. Users can search for news articles and save them for offline viewing. Additionally, the app checks for internet connectivity to ensure seamless operation.
+
+## Features
+
+- Browse the latest news articles fetched from a remote server.
+- Search for specific news articles based on keywords.
+- Save news articles locally for offline viewing.
+- Automatic internet connectivity check to ensure seamless operation.
+
+## Screenshots
+
+Here are some screenshots showcasing the functionality of the application:
+
+<img src="https://example.com/news_app_screenshot_1.png" alt="News App Screenshot 1" width="250">
+<img src="https://example.com/news_app_screenshot_2.png" alt="News App Screenshot 2" width="250">
+<img src="https://example.com/news_app_screenshot_3.png" alt="News App Screenshot 3" width="250">
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+```
+git clone https://github.com/your_username/news_app.git
+```
+
+2. Open the project in Android Studio.
+
+3. Build and run the application on an Android device or emulator.
+
+## Usage
+
+- Launch the application on your device.
+- Browse through the latest news articles or use the search functionality to find specific articles.
+- Tap on an article to view its details.
+- Save articles for offline viewing by clicking on the save button.
+- Ensure that your device has an active internet connection for fetching the latest news.
+
+## Dependencies
+
+- [Dagger Hilt](https://dagger.dev/hilt/) - Dependency injection framework for Android.
+- [Room Database](https://developer.android.com/training/data-storage/room) - Local database for storing news articles.
+- [News API](https://newsapi.org/) - Remote server providing news articles.
+- [ConnectivityManager](https://developer.android.com/reference/android/net/ConnectivityManager) - Used for internet connectivity check.
+
+## Contributing
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Let's make this news app even better together!
