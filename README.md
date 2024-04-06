@@ -1,13 +1,19 @@
+Certainly! Here's the updated README with the addition of WebView functionality:
+
+---
+
 # New App
 
-This application provides users with the latest news articles fetched from a remote server. It's built using Kotlin and XML with the MVVM architecture, incorporating dependency injection using Dagger Hilt and local storage using Room Database. Users can search for news articles and save them for offline viewing. Additionally, the app checks for internet connectivity to ensure seamless operation.
+This application provides users with the latest news articles fetched from a remote server. It's built using Kotlin and XML with the MVVM architecture, incorporating dependency injection using Dagger Hilt and local storage using Room Database. Users can search for news articles, paginate through the results, and save them for offline viewing. Additionally, the app checks for internet connectivity to ensure seamless operation. News articles are displayed using WebView for a rich browsing experience.
 
 ## Features
 
 - Browse the latest news articles fetched from a remote server.
 - Search for specific news articles based on keywords.
+- Paginate through the search results to view more articles.
 - Save news articles locally for offline viewing.
 - Automatic internet connectivity check to ensure seamless operation.
+- View news articles using WebView for a rich browsing experience.
 
 ## Screenshots
 
@@ -33,7 +39,8 @@ git clone https://github.com/your_username/news_app.git
 
 - Launch the application on your device.
 - Browse through the latest news articles or use the search functionality to find specific articles.
-- Tap on an article to view its details.
+- Paginate through the search results by clicking on the next or previous buttons.
+- Tap on an article to view its details in a WebView.
 - Save articles for offline viewing by clicking on the save button.
 - Ensure that your device has an active internet connection for fetching the latest news.
 
@@ -43,7 +50,12 @@ git clone https://github.com/your_username/news_app.git
 - [Room Database](https://developer.android.com/training/data-storage/room) - Local database for storing news articles.
 - [News API](https://newsapi.org/) - Remote server providing news articles.
 - [ConnectivityManager](https://developer.android.com/reference/android/net/ConnectivityManager) - Used for internet connectivity check.
+- WebView - Android system component used for displaying web content.
 
 ## Contributing
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Let's make this news app even better together!
+
+--- 
+
+In this version of the README, I've added a new feature "View news articles using WebView for a rich browsing experience" to the "Features" section and updated the "Usage" section to mention WebView usage for viewing article details. Additionally, the "Dependencies" section now explicitly mentions WebView as a dependency.
