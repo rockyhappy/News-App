@@ -1,7 +1,3 @@
-Certainly! Here's the updated README with the addition of WebView functionality:
-
----
-
 # New App
 
 This application provides users with the latest news articles fetched from a remote server. It's built using Kotlin and XML with the MVVM architecture, incorporating dependency injection using Dagger Hilt and local storage using Room Database. Users can search for news articles, paginate through the results, and save them for offline viewing. Additionally, the app checks for internet connectivity to ensure seamless operation. News articles are displayed using WebView for a rich browsing experience.
